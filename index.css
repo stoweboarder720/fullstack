@@ -1,0 +1,56 @@
+/*
+.color-primary-0 { color: #23497A }	Primary color, midnight blue
+.color-primary-1 { color: #013474 } Accent color, navy
+.color-primary-2 { color: #0C72F6 } Highlight/select color, light blue
+.color-primary-3 { color: #0A0E13 } Icon deselect/accent color
+.color-primary-4 { color: #5F646A } tertiary accent/text color
+background color: #FFFFFF
+
+Color scheme is made of up muted blues, it is soft and works well with a darker
+background color, white backgrounds also work well it's just a bit harsher on
+the eyes but allows for more flexibility later down the road, so that was chosen.
+Blue is generally an agreeable color and is neither too bright nor too dull.
+*/
+
+body {
+  background-color: #FFFFFF;
+}
+
+p#personalinfo {
+  color: #013474; 
+}
+
+p {
+  color: #5F646A;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: #0A0E13;
+  font-family: "PT Sans", sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  background-color: #A3A3A3;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  color: #013474;
+  background-color: #A3A3A3;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  color: #5F646A;
+  font-family: "Cabin", sans-serif;
+  font-style: italic;
+}
+
+h4 {
+  color: #5F646A
+  font-family: "Oxygen", sans-serif;
+}
