@@ -2,103 +2,102 @@
 <html>
 
 <head>
+	<link href="https://fonts.googleapis.com/css?family=Abel|Cabin|Noto+Sans|Oxygen|PT+Sans|Titillium+Web|Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="index.css">
 
-<link href="https://fonts.googleapis.com/css?family=Abel|Cabin|Noto+Sans|Oxygen|PT+Sans|Titillium+Web|Varela+Round" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="index.css">
+	<style>
+	* {
+		box-sizing: border-box; /* height/width includes content padding and borders */
+	}
+ 
+	body {
+		font-family: 'PT Sans', sans-serif;
+		font-family: 'Noto Sans', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Cabin', sans-serif;
+		font-family: 'Varela Round', sans-serif;
+		font-family: 'Abel', sans-serif;
+		font-family: 'Oxygen', sans-serif;
+	}
+	</style>
 
-<style>
-  body {
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-    font-family: 'Cabin', sans-serif;
-    font-family: 'Varela Round', sans-serif;
-    font-family: 'Abel', sans-serif;
-    font-family: 'Oxygen', sans-serif;
-  }
-</style>
-
-<title>Web Portfolio</title>
+	<title>Web Portfolio</title>
 </head>
 
 <body>
 
-<div id = "container"> 
+	<div id = "container"> 
 
-<h1>Web Portfolio</h1>
+		<h1>Web Portfolio</h1>
 
-<!-- section contains about me and about course info -->
-<section id="about">
-  <h2 id="aboutheader">About</h2> 
+		<div id="profile"> 
+		<!-- section contains about me and about course info -->
+			<section id="about">
 
-  <!-- section contains info about me -->
-  <section class="aboutcol" id="aboutme">
-    <h3 id="authorheader">The Author</h3>
-    <p id = "personalinfo">
-      Name: Christian Ouellette
-    <br>
-      Email: clo006@bucknell.edu
-    </p>
-  </section>
+				<!-- section contains info about me -->
+				<section class="aboutcol" id="aboutme">
+					<h3 id="authorheader">The Author</h3>
+					
+					<p id = "personalinfo">
+					Name: Christian Ouellette
+					<br>
+					Email: clo006@bucknell.edu
+					</p>
+				</section>
 
-  <!-- section contains info about the course -->
-  <section class="aboutcol" id="aboutcourse">
-    <h3 id="courseheader">The Course</h3>
+				<!-- section contains info about the course -->
+				<section class="aboutcol" id="aboutcourse">
+					<h3 id="courseheader">The Course</h3>
 
-    <p> This course involes learning full stack web development and the necessary tools to accomplish this goal. </p> 
-  </section>
+					<p> This course involes learning full stack web development and the necessary tools to accomplish this goal. </p> 
+				</section>
   
-  <section class="aboutcol" id="portraitsec">
-	<img id="portrait" src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgyAAAAJDI4MGMzNjhlLTQyYWItNGJmYS1hMDliLTVmY2QwY2QyYmU5YQ.jpg" alt = "self portrait"/>
-  </section>
+			</section>
+
+			<!-- section containing image for self portrait -->
+			<section class="portrait" id="portraitsec">
+				<img id="portrait" src = "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAgyAAAAJDI4MGMzNjhlLTQyYWItNGJmYS1hMDliLTVmY2QwY2QyYmU5YQ.jpg" alt = "self portrait"/>
+			</section>
+
+		</div> 
+
+		<!-- section contains info about coursework such as activities and homework -->
+		<section class="coursework" id = "coursework">
+			<h2>Additional Coursework</h2>
+
+			<section id = "fonts">
+				<h4><a href="https://stoweboarder720.github.io/fullstack/fontfun.html">Font Fun</a></h4>
+				
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque gravida mauris at eleifend. Phasellus placerat, nulla in venenatis finibus, odio purus convallis massa, eu hendrerit urna tellus sit amet lacus. </p> 
+			</section>
+
+		</section>
+
+
+		<!-- section contains info about projects completed in the course -->
+		<section class="projects" id = "projectcont">
+			<!-- section describes first project -->
+			<section class="project" id = "projectone">
+				<h2>Project One</h2>
+				
+				<p>The results of Project 1 are demonstrated on this page through the use of media functions, which rearrange content depending on the size of the current window to improve readability, and other various CSS styling elements.</p>
+			</section>
+
+			<!-- section describes second project -->
+			<section class="project2" id = "projecttwo">
+				<h2>Project Two</h2>
+			
+				<p>After project one! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque gravida mauris at eleifend. Phasellus placerat, nulla in venenatis finibus, odio purus convallis massa, eu hendrerit urna tellus sit amet lacus.</p>
+			</section>
+
+			<!-- section describes third project -->
+			<section class="project3" id = "projectthree">
+				<h2>Project Three</h2>
+				
+				<p>It'll be awhile :( Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque gravida mauris at eleifend. Phasellus placerat, nulla in venenatis finibus, odio purus convallis massa, eu hendrerit urna tellus sit amet lacus.</p>
+			</section>
   
-</section>
-
-<!-- section contains info about coursework such as activities and homework -->
-<section id = coursework>
-  <h2>Additional Coursework</h2>
-
-  <section id = "fonts">
-    <h4><a href="https://stoweboarder720.github.io/fullstack/fontfun.html">Font Fun</a></h4>
-  </section>
-
-</section>
-
-
-<!-- section contains info about projects completed in the course -->
-<section id = "projects">
-  <h2>Projects</h2>
-
-  <!-- section with project overview -->
-  <section id = "overview">
-    <h3>Overview</h3>
-    <p>The following projects will be completed over the course of the semester</p>
-  </section>
-
-  <br>
-
-  <!-- section describes first project -->
-  <section id = "projectone">
-    <h4>Project One</h4>
-    <p>Coming soon!</p>
-  </section>
-
-  <br>
-  <!-- section describes second project -->
-  <section id = "projecttwo">
-    <h4>Project Two</h4>
-    <p>After project one!</p>
-  </section>
-
-  <br>
-  <!-- section describes third project -->
-  <section id = "projectthree">
-    <h4>Project Three</h4>
-    <p>It'll be awhile :( </p>
-  </section>
-
-</section>
-
-</div> 
+		</section>	
+	</div> 
 </body>
 </html>
