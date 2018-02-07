@@ -16,96 +16,102 @@ body {
 	background-color: #FFFFFF;
 }
 
-div#container {
+#container {
+	display: block;
 	width:100%;
-    margin-left: auto;
-    margin-right: auto;
-} 
+	margin-left: auto;
+  margin-right: auto;
+}
 
-/* about section styling */ 
+#about {
+		overflow: auto;
+}
+
+/* about section styling */
 .aboutcol {
-	position: static; 
-	float: left;
-	height: 100%;
+	display: block;
+	position: static;
 	padding: 20px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: black;	
+	border-color: black;
 	background-color: #FFFFFF;
+	float: left;
 }
 
 #portrait {
-	position: absolute;
-	right: 20px; 
-	top: 80px; 
-	width: 30%; 
-	max-height: 160px;  
-	max-width: 160px; 
-	padding: 5px; 
-}
-
-#profile {
-	width: 80%; 
+	position: static;
+	float: right;
+	right: 20px;
+	top: 80px;
+	width: 30%;
+	max-height: 160px;
+	max-width: 160px;
+	padding: 5px;
 }
 
 p#personalinfo {
-	color: #0C72F6; 
+	color: #0C72F6;
 }
 
-/* coursework section styling */ 
+/* coursework section styling */
 .coursework{
+	clear: both;
 	position: relative;
 	width: 100%;
-    float: left; 
-	padding: 20px; 
+	padding: 20px;
 	border-width: 1px;
     border-style: solid;
     border-color: black;
-	background-color: #A3A3A3; 
-} 
+	background-color: #A3A3A3;
+}
 
 .coursework p{
 	color: #FFFFFF;
-} 
+}
 
-/* projects section styling */ 
+/* projects section styling */
 .projects{
-	position: relative; 
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project{
-	float: left;
 	width: 100%;
 	padding: 20px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: black;	
+	border-color: black;
+	flex-grow: 1;
+flex-shrink: 0;
 }
 
 .project2{
-	float: left;
 	width: 100%;
-	padding: 20px; 
+	padding: 20px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: black;
+	flex-grow: 1;
+flex-shrink: 0;
 }
 
 .project3{
-	float: left;
 	width: 100%;
-	padding: 20px; 
+	padding: 20px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: black;
+	flex-grow: 1;
+flex-shrink: 0;
 }
 
 .projects p {
 	text-align: center;
-	color: #FFFFFF; 
+	color: #FFFFFF;
 }
 
-/* general styling */ 
+/* general styling */
 p {
 	color: #5F646A;
 	font-family: "PT Sans", sans-serif;
@@ -143,76 +149,76 @@ h4 {
 /* media functions for page resizing */
 @media (min-width: 992px) {
 	.aboutcol {
-		width: 50%;
-	} 
+		width: 33.33%;
+	}
 	.projects h2 {
 		color: #FFFFFF;
-	} 
+	}
 	.project {
 		width: 33.33%;
 		text-align: left;
-		background-color: #013474;		
-	} 
+		background-color: #013474;
+	}
 	.project2 {
 		width: 33.33%;
 		text-align: center;
-		background-color: #013474;		
-	} 
+		background-color: #013474;
+	}
 	.project3 {
 		width: 33.33%;
 		text-align: right;
-		background-color: #013474;		
-	} 
-} 
+		background-color: #013474;
+	}
+}
 @media (max-width: 991px) and (min-width:768px) {
 	.aboutcol {
-		width: 50%;
-	} 
+		width: 33.33%;
+	}
 	.projects h2 {
 		color: #FFFFFF;
-	} 
+	}
 	.project {
 		width: 50%;
-		text-align: left; 
+		text-align: left;
 		background-color: #013474;
-	} 
+	}
 	.project2 {
 		width: 50%;
-		text-align: right; 
+		text-align: right;
 		background-color: #013474;
-	} 
+	}
 	.project3 {
 		width: 100%;
 		text-align: center;
-		background-color: #A3A3A3;		
-	} 
-} 
+		background-color: #A3A3A3;
+	}
+}
 @media (max-width: 767px) {
 	.aboutcol {
-		width: 100%; 
+		width: 60%;
 	}
-	.projects h2 { 
+	.projects h2 {
 		color: #FFFFFF;
 	}
 	.project {
 		width: 100%;
-		text-align: left; 
+		text-align: left;
 		background-color: #013474;
-	} 
+	}
 	.project2 {
 		width: 100%;
-		text-align: left; 
+		text-align: left;
 		background-color: #FFFFFF;
-	} 
+	}
 	.project2 h2 {
-		color: #013474; 
+		color: #013474;
 	}
 	.project2 p {
-		color: #5F646A; 
+		color: #5F646A;
 	}
 	.project3 {
 		width: 100%;
-		text-align: left; 
+		text-align: left;
 		background-color: #013474;
-	} 
+	}
 }
