@@ -16,10 +16,55 @@ body {
   background-color: #FFFFFF;
 }
 
+div#container {
+	position: static;
+} 
+
+/* about styling */ 
+section#about {
+	position: static;
+	height: 200px; 
+	padding: 0 20px;
+}
+
+@media (min-width: 950px) {
+  .aboutcol {
+	width: 33%;
+  } 
+} 
+@media (max-width: 720px) and (min-width:500px) {
+  .aboutcol {
+	width: 33%;
+  } 
+} 
+
+img#portrait {
+  float: right;
+  max-width: 50%;
+  max-height: 50%;
+  width: 100%;   
+}
+
+#about section {
+	float: left; 
+	padding: 0, 20px;
+} 
+
 p#personalinfo {
   color: #0C72F6; 
 }
 
+/* coursework styling */ 
+section#coursework {
+	position: relative; 
+}
+
+/* projects styling */ 
+section#projects {
+	position: relative; 
+} 
+
+/* general styling */ 
 p {
   color: #5F646A;
   font-family: "PT Sans", sans-serif;
@@ -39,7 +84,7 @@ h1 {
 
 h2 {
   color: #013474;
-  background-color: #A3A3A3;
+  /*background-color: #A3A3A3;*/ 
   font-family: "Titillium Web", sans-serif;
   font-weight: 700;
 }
