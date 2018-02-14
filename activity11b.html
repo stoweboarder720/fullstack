@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/activity11b.css" rel="stylesheet">
+  </head>
+
+<!--
+NOTICE: Most code herein is sourced from the provided bootstrap Carousel Example
+webpage and has been tweaked/modified to serve these sample pages.
+-->
+
+  <body>
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color: #013474;">
+          <a class="navbar-brand" href="#">Web Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://stoweboarder720.github.io/fullstack/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coursework</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Project 1</a>
+                  <a class="dropdown-item" href="#">Project 2</a>
+                  <a class="dropdown-item" href="#">Project 3</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <button type="button" class="btn btn-warning my-2 my-sm-0" onclick="location.href = 'https://soundcloud.com/creezo';">BeatBank</button>
+            </form>
+          </div>
+        </nav>
+    </header>
+
+    <main role="main">
+
+      <div id="mainCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mainCarousel" data-slide-to="1"></li>
+          <li data-target="#mainCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="https://ra15x2bxh4jgm7y53s4oe01c-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/Artboard-1@4x-8.png" alt="First slide">
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>Here's a Carousel</h1>
+                <p>I know it's JavaScript, or rather, I found out after fiddling with it like a dolt. I included the card feature below to make up for the oversight and experimented with alternatives.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">The Author</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="second-slide" src="https://i.imgur.com/DYm1aqo.jpg" alt="Second slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>It Looks Pretty Nice</h1>
+                <p>Except with this terribly obstructive background.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">The Course</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="third-slide" src="http://www.androidguys.com/wp-content/uploads/2016/02/abstract_pyramids-2560x1440.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1>Especially with Pictures</h1>
+                <p>This is an improvement.</p>
+                <p><a class="btn btn-lg btn-primary" href="#" role="button">Enlightenment</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <!-- Project Featurettes
+      ================================================== -->
+      <div class="container projects">
+
+        <!-- row and column based featurette --> 
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://i.ytimg.com/vi/z6-yNpJQCFk/maxresdefault.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project 1</h2>
+            <p>The results of Project 1 are demonstrated on the home page through the use of media functions, which rearrange content depending on the size of the current window to improve readability, and other various CSS styling elements.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pictogram_voting_question.svg/220px-Pictogram_voting_question.svg.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project 2</h2>
+            <p>After project one! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque gravida mauris at eleifend. Phasellus placerat, nulla in venenatis finibus, odio purus convallis massa, eu hendrerit urna tellus sit amet lacus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pictogram_voting_question.svg/220px-Pictogram_voting_question.svg.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Project 3</h2>
+            <p>It'll be awhile :( Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque gravida mauris at eleifend. Phasellus placerat, nulla in venenatis finibus, odio purus convallis massa, eu hendrerit urna tellus sit amet lacus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+        <!-- card based featurette -->
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Intro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><small class="text-muted">Project</small> 1</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Best Practice</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">View details &raquo;</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Building</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><small class="text-muted">Project</small> 2</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>OG Garbage</li>
+                <li>Garbage 2</li>
+                <li>Garbage 3</li>
+                <li>Garbage 4</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">View details &raquo;</button>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Culmination</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><small class="text-muted">Project</small> 3</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>OG Garbage</li>
+                <li>Garbage 2</li>
+                <li>Garbage 3</li>
+                <li>Garbage 4</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary">View details &raquo;</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div><!-- /.container -->
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

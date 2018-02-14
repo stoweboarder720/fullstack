@@ -48,7 +48,6 @@ p#personalinfo {
 	padding: 10px;
 	background-color: #A3A3A3;
 }
-
 .coursework p{
 	color: #FFFFFF;
 }
@@ -57,20 +56,16 @@ p#personalinfo {
 .project{
 	padding: 10px;
 }
-
 .project2{
 	padding: 10px;
 }
-
 .project3{
 	padding: 10px;
 }
-
 .projects p {
 	text-align: center;
 	color: #FFFFFF;
 }
-
 .projects a {
 	color: #FFFFFF;
 }
@@ -80,30 +75,25 @@ p {
 	color: #5F646A;
 	font-family: "PT Sans", sans-serif;
 }
-
 a {
 	color: #0A0E13;
 	font-family: "PT Sans", sans-serif;
 }
-
 h1 {
 	color: #FFFFFF;
 	font-family: "Oxygen", sans-serif;
 	font-weight: 400;
 }
-
 h2 {
 	color: #013474;
 	font-family: "Titillium Web", sans-serif;
 	font-weight: 700;
 }
-
 h3 {
 	color: #5F646A;
 	font-family: "Cabin", sans-serif;
 	font-style: italic;
 }
-
 h4 {
 	color: #5F646A;
 	font-family: "Oxygen", sans-serif;
