@@ -16,22 +16,25 @@ body {
 	background-color: #FFFFFF;
 }
 
-#container {
-}
-
-#about {
-}
-
 /* about section styling */
 .aboutcol {
-	border-width: 1px;
-	border-style: solid;
-	border-color: black;
 	background-color: #FFFFFF;
 }
 
+#siteheader {
+		background-color: #5F646A;
+}
+
+#soundcloud {
+	padding: 8px;
+}
+
+#about {
+	padding: 10px;
+}
+
 #portrait {
-	width: 30%;
+	width: 40%;
 	max-height: 160px;
 	max-width: 160px;
 }
@@ -42,9 +45,7 @@ p#personalinfo {
 
 /* coursework section styling */
 .coursework{
-	border-width: 1px;
-  border-style: solid;
-  border-color: black;
+	padding: 10px;
 	background-color: #A3A3A3;
 }
 
@@ -53,43 +54,24 @@ p#personalinfo {
 }
 
 /* projects section styling */
-.projects{
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .project{
-	width: 100%;
-	padding: 20px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: black;
-	flex-grow: 1;
-flex-shrink: 0;
+	padding: 10px;
 }
 
 .project2{
-	width: 100%;
-	padding: 20px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: black;
-	flex-grow: 1;
-flex-shrink: 0;
+	padding: 10px;
 }
 
 .project3{
-	width: 100%;
-	padding: 20px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: black;
-	flex-grow: 1;
-flex-shrink: 0;
+	padding: 10px;
 }
 
 .projects p {
 	text-align: center;
+	color: #FFFFFF;
+}
+
+.projects a {
 	color: #FFFFFF;
 }
 
@@ -106,7 +88,6 @@ a {
 
 h1 {
 	color: #FFFFFF;
-	background-color: #5F646A;
 	font-family: "Oxygen", sans-serif;
 	font-weight: 400;
 }
@@ -130,65 +111,60 @@ h4 {
 
 /* media functions for page resizing */
 @media (min-width: 992px) {
-	.aboutcol {
-		width: 33.33%;
+	#portraitsec {
+		text-align: right;
 	}
 	.projects h2 {
 		color: #FFFFFF;
 	}
 	.project {
-		width: 33.33%;
 		text-align: left;
 		background-color: #013474;
 	}
 	.project2 {
-		width: 33.33%;
 		text-align: center;
 		background-color: #013474;
 	}
 	.project3 {
-		width: 33.33%;
 		text-align: right;
 		background-color: #013474;
 	}
 }
 @media (max-width: 991px) and (min-width:768px) {
-	.aboutcol {
-		width: 33.33%;
-	}
 	.projects h2 {
 		color: #FFFFFF;
 	}
 	.project {
-		width: 50%;
 		text-align: left;
 		background-color: #013474;
 	}
 	.project2 {
-		width: 50%;
 		text-align: right;
 		background-color: #013474;
 	}
 	.project3 {
-		width: 100%;
 		text-align: center;
 		background-color: #A3A3A3;
 	}
+	#portraitsec {
+		text-align: center;
+	}
+	#aboutcourse {
+		text-align: right;
+	}
 }
 @media (max-width: 767px) {
-	.aboutcol {
-		width: 60%;
+	#portraitsec{
+		text-align: right;
 	}
 	.projects h2 {
 		color: #FFFFFF;
 	}
 	.project {
-		width: 100%;
 		text-align: left;
 		background-color: #013474;
 	}
 	.project2 {
-		width: 100%;
 		text-align: left;
 		background-color: #FFFFFF;
 	}
@@ -199,7 +175,6 @@ h4 {
 		color: #5F646A;
 	}
 	.project3 {
-		width: 100%;
 		text-align: left;
 		background-color: #013474;
 	}
