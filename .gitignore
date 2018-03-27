@@ -1,0 +1,12 @@
+
+project2/trash/src/component/BaseLookupMethod.js
+project2/trash/src/component/CourseCard.js
+project2/trash/src/component/CourseDetailModal.js
+project2/trash/src/component/CourseList.js
+project2/trash/src/component/CourseLookup.js
+project2/trash/src/component/LookupByCourseTitle.js
+project2/trash/src/component/LookupByDepartment.js
+project2/trash/src/component/LookupByMajor.js
+project2/trash/src/component/LookupByRequirement.js
+project2/trash/src/component/NavigationMenu.js
+project2/trash/src/data/Constants.js
