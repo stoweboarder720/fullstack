@@ -2,7 +2,7 @@
   "name": "coursey",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stoweboarder720.github.io/fullstack/project2/coursey/build"
+  "homepage": "https://stoweboarder720.github.io/fullstack/project2/coursey/build",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "react": "^16.2.0",
