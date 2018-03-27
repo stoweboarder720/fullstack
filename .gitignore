@@ -10,3 +10,8 @@ project2/trash/src/component/LookupByMajor.js
 project2/trash/src/component/LookupByRequirement.js
 project2/trash/src/component/NavigationMenu.js
 project2/trash/src/data/Constants.js
+project2/trash/src/style/BaseLookupMethod.css
+project2/trash/src/style/CourseCard.css
+project2/trash/src/style/CourseLookup.css
+project2/trash/src/style/CourseList.css
+project2/trash/src/style/NavigationMenu.css
