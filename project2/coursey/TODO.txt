@@ -6,7 +6,8 @@
 -less whitespace?
 -some cards are larger than others (ones with room number displayed)
 -revise promise statements
--fix error that sometimes occurs due to tab swap during query 
+-fix error that sometimes occurs due to tab swap during query
+-eliminate repeat cards, provide pop out that gives sections
 
 NOTE: removed event.preventDefault() call in searchMajor fcn in majorSelect.js
 NOTE: removed error checking from searchMajor() in majorSelect.js
