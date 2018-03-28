@@ -98,12 +98,9 @@ class Major extends CourseSearch {
     let tempQuery = '';
 
     if (ccc === "Any" && department === "Any") {
-      console.log("ANY");
     } else if (department === "Any") {
-      console.log("DEPT");
       tempQuery = `CCCReq=${ccc.toUpperCase()}`;
     } else if (ccc === "Any") {
-      console.log("CCC");
       tempQuery = `Department=${department.toUpperCase()}`;
     } else {
       tempQuery = `Department=${department.toUpperCase()}&CCCReq=${ccc.toUpperCase()}`;
@@ -129,29 +126,43 @@ class Major extends CourseSearch {
     const departments = Refs.DEPARTMENTS.map((dept, i) => <option key={i}>{dept}</option>);
     const requirements = Refs.REQUIREMENTS.map((req, i) => <option key={i}>{req}</option>);
     return (
-      <div className="p-4">
-        <Form className="courseSearchForm" onSubmit={this.searchMajor} inline>
-          <Label for="majorChoice">Select your major:</Label>
-          <Input id="majorChoice" type="select" value={this.state.major} onChange={this.updatedMajor}>
-            {majors}
-          </Input>
-          <Label for="yearChoice">and your class year:</Label>
-          <Input id="yearChoice" type="select" value={this.state.year} onChange={this.updatedYear}>
-            {years}
-          </Input>
-        </Form>
+      <div className="container">
+        <br/>
+        <h2 className="text-center">First, find your required courses</h2>
+        <br/>
+        <div className="row">
+          <Form className="courseSearchForm" onSubmit={this.searchMajor} inline>
+            <Label className="col-6" for="yearChoice">Select your major: </Label>
+            <Input className="col-6" id="majorChoice" type="select" value={this.state.major} onChange={this.updatedMajor}>
+              {majors}
+            </Input>
+            <Label className="col-6" for="majorChoice">Select your year:</Label>
+            <Input className="col-6" id="yearChoice" type="select" value={this.state.year} onChange={this.updatedYear}>
+              {years}
+            </Input>
+          </Form>
+        </div>
 
-        <Form className="courseSearchForm" onSubmit={this.fetchCourses} inline>
-          <Label for="deptChoice">Select a department:</Label>
-          <Input id="deptChoice" type="select" value={this.state.department} onChange={this.updatedDepartment}>
-            {departments}
-          </Input>
-          <Label for="reqChoice">Select a CCC Requirement:</Label>
-          <Input id="reqChoice" type="select" value={this.state.requirement} onChange={this.updatedRequirement}>
-            {requirements}
-          </Input>
+        <br/>
+        <br/>
+        <h2 className="text-center">{"Next, choose the department and/or the CCC requirement you'd like for your electives"}</h2>
+        <br/>
+        <div className="row">
+          <Form className="courseSearchForm" onSubmit={this.fetchCourses} inline>
+            <Label className="col-6" for="deptChoice">Select a department:</Label>
+            <Input className="col-6" id="deptChoice" type="select" value={this.state.department} onChange={this.updatedDepartment}>
+              {departments}
+            </Input>
+            <Label className="col-6" for="reqChoice">Select a CCC Requirement:</Label>
+            <Input className="col-6" id="reqChoice" type="select" value={this.state.requirement} onChange={this.updatedRequirement}>
+              {requirements}
+            </Input>
+          </Form>
+        </div>
+        <br/>
+        <div className="text-center">
           <Button onClick={this.fetchCourses}>Explore</Button>
-        </Form>
+        </div>
       </div>
     );
   }

@@ -6,8 +6,37 @@
 -revise promise statements
 -eliminate repeat cards, provide pop out that gives sections
 
-courses.push(
-  <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
-    <CourseCard course={course} timesRooms={timesRooms}/>
-  </Col>
+SCRAPS:
+let courses = [];
+let displayedCoursesTitles = [];
+let displayedCourses = [];
+let displayedCRNs = [];
+for (let i = 0; i < this.props.courseList.length; i++) {
+  const course = this.props.courseList[i];
+  const timesRooms = this.pairTimeRoom(course);
+  for (let j = 0; j < this.props.courseList.length; j++) {
+    if (displayedCoursesTitles.indexOf(course.Title) === -1) {
+      displayedCoursesTitles.push(course.Title);
+      displayedCRNs.push(course.CRN);
+      displayedCourses.push(
+        <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
+          <CourseCard course={course} timesRooms={timesRooms} viewSections={this.viewSections}/>
+        </Col>
+      );
+    } else if (displayedCoursesTitles.indexOf(course.Title) > -1 && displayedCRNs.indexOf(course.CRN) === -1) {
+      displayedCRNs.push(course.CRN);
+    }
+  }
+  console.log(displayedCourses);
+  courses.push(
+    <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
+      <CourseCard course={course} timesRooms={timesRooms}/>
+    </Col>
+  );
+}
+const cardData = (
+  <Row>
+    {displayedCourses}
+  </Row>
 );
+return cardData;

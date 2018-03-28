@@ -1,65 +1,22 @@
 import React from "react";
 import {Row, Col} from "reactstrap";
 import CourseCard from "./courseCard.js";
+import {ToastContainer} from 'react-toastify';
 
 class CourseDisplay extends React.Component {
-
-  fetchRooms(course) {
-    let rooms = [];
-    let room = "";
-    let count = 0;
-
-    while (count < course.Room.length) {
-      room += course.Room.charAt(count);
-      if (room.length >= 8) {
-        rooms.push(room);
-        room = "";
-        count++;
-      }
-      count++;
+  constructor(props) {
+    super(props);
+    this.viewSections = this.viewSections.bind(this);
+    this.state = {
+      detailOpen: false,
+      curCourse: null
     }
-    return rooms;
   }
 
-  fetchTimes(course) {
-    let times = [];
-    let tempTime = "";
-    let count = 0;
-
-    while (count < course["Meeting Time"].length) {
-      tempTime += course["Meeting Time"].charAt(count);
-      const suffix = tempTime.slice(-2);
-      if (suffix === "am" || suffix === "pm") {
-        times.push(tempTime);
-        tempTime = "";
-        count++;
-      }
-      count++;
+  roomCheck(course) {
+    if (course.Room.length === 0) {
+      course.Room = "TBD";
     }
-    return times;
-  }
-
-  pairTimeRoom(course) {
-    const times = this.fetchTimes(course);
-    const rooms = this.fetchRooms(course);
-    const timesRooms = [];
-
-    for (let i = 0; i < times.length; i++) {
-      let room = "";
-      if (rooms.length === 0) {
-        room = "";
-      } else if (rooms.length <= i) {
-        room = " - " + rooms[rooms.length - 1]
-      } else {
-        room = " - " + rooms[i];
-      }
-      timesRooms.push(<div key={i}>{times[i] + room}</div>);
-    }
-    if (timesRooms.length === 0) {
-      timesRooms.push(<div key={0}>TBD</div>);
-    }
-    timesRooms.push(<br key={-1}/>);
-    return timesRooms;
   }
 
   populateCards() {
@@ -74,32 +31,18 @@ class CourseDisplay extends React.Component {
         );
       } else {
         let courses = [];
-        let displayedCoursesTitles = [];
-        let displayedCourses = [];
         for (let i = 0; i < this.props.courseList.length; i++) {
           const course = this.props.courseList[i];
-          const timesRooms = this.pairTimeRoom(course);
-          if (displayedCoursesTitles.indexOf(course.Title) === -1) {
-            console.log(displayedCourses.indexOf(course.Title));
-            console.log(course.Title);
-            displayedCoursesTitles.push(course.Title);
-            displayedCourses.push(
-              <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
-                <CourseCard course={course} timesRooms={timesRooms}/>
-              </Col>
-            );
-          }
-
+          this.roomCheck(course);
           courses.push(
             <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
-              <CourseCard course={course} timesRooms={timesRooms}/>
+              <CourseCard course={course}/>
             </Col>
           );
-
         }
         const cardData = (
           <Row>
-            {displayedCourses}
+            {courses}
           </Row>
         );
         return cardData;
@@ -108,10 +51,18 @@ class CourseDisplay extends React.Component {
     return null;
   }
 
+  viewSections(course) {
+    this.setState({
+      detailOpen: !this.state.detailOpen,
+      curCourse: course
+    })
+  }
+
   render() {
     const cards = this.populateCards();
     return (
       <div>
+        <ToastContainer autoClose={2000}/>
         {cards}
       </div>
     );

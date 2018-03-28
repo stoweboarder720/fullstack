@@ -6,14 +6,17 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "classnames": "^2.2.5",
+    "glamor": "^2.20.40",
     "material-ui": "^1.0.0-beta.38",
     "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.2.0",
+    "react-flipcard": "^0.2.1",
     "react-scripts": "1.1.1",
     "react-scroll": "^1.7.7",
+    "react-toastify": "^3.4.3",
     "reactstrap": "^5.0.0-beta.3"
   },
   "scripts": {

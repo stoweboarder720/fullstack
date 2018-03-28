@@ -5,7 +5,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 import './index.css';
 import "./style/navigation.css";
-import "./style/courseCard.css";
+import "./style/cardFlip.css";
 import "bootstrap/dist/css/bootstrap.css";
 ReactDOM.render(<Coursey />, document.getElementById('root'));
 registerServiceWorker();

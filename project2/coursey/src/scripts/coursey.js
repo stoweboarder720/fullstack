@@ -24,12 +24,10 @@ class Coursey extends React.Component {
 
   changeReqs(CourseDisplay) {
     this.setState({ reqCourses: CourseDisplay });
-    console.log(this.state.reqCourses);
   }
 
   changeElecs(CourseDisplay) {
     this.setState({ elecCourses: CourseDisplay });
-    console.log(this.state.elecCourses);
   }
 
   render() {
