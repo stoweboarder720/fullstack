@@ -95,6 +95,11 @@ class Major extends CourseSearch {
         this.props.changeReqs(this.state.reqData);
       });
 
+    if (cccReq === "Any") {
+      console.log("ANY");
+    } else if (department === "Any") {
+      console.log("DEPT"); 
+    }
     const query2 = `Department=${department.toUpperCase()}&CCCReq=${cccReq.toUpperCase()}`;
     this.courseQueryFetch(query2)
       .then((data) => {
