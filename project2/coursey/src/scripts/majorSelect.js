@@ -78,10 +78,10 @@ class Major extends CourseSearch {
 
     let requirement = this.state.requirement.slice(0, 4);
     let department = this.state.department.slice(0, 4);
-    let cccReq = "";
+    let ccc = "";
     let i = 0;
     while (requirement.charAt(i).match("[a-zA-Z0-9]")) {
-      cccReq += requirement.charAt(i);
+      ccc += requirement.charAt(i);
       i++;
     }
 
@@ -95,12 +95,22 @@ class Major extends CourseSearch {
         this.props.changeReqs(this.state.reqData);
       });
 
-    if (cccReq === "Any") {
+    let tempQuery = '';
+
+    if (ccc === "Any" && department === "Any") {
       console.log("ANY");
     } else if (department === "Any") {
-      console.log("DEPT"); 
+      console.log("DEPT");
+      tempQuery = `CCCReq=${ccc.toUpperCase()}`;
+    } else if (ccc === "Any") {
+      console.log("CCC");
+      tempQuery = `Department=${department.toUpperCase()}`;
+    } else {
+      tempQuery = `Department=${department.toUpperCase()}&CCCReq=${ccc.toUpperCase()}`;
     }
-    const query2 = `Department=${department.toUpperCase()}&CCCReq=${cccReq.toUpperCase()}`;
+
+    const query2 = tempQuery;
+
     this.courseQueryFetch(query2)
       .then((data) => {
         if (data.message.length > 0) {
