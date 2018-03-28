@@ -5,3 +5,9 @@
 -some cards are larger than others (ones with room number displayed)
 -revise promise statements
 -eliminate repeat cards, provide pop out that gives sections
+
+courses.push(
+  <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
+    <CourseCard course={course} timesRooms={timesRooms}/>
+  </Col>
+);

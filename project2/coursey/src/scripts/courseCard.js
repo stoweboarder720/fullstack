@@ -12,10 +12,6 @@ class CourseCard extends React.Component {
           <CardBody className="text-center">
             <CardTitle>{course.Department + " " + course.CrseNum}</CardTitle>
             <CardSubtitle>{course.Title}</CardSubtitle>
-            <CardText>{"Section " + course.Section}</CardText>
-            <CardText>{"CRN " + course.CRN}</CardText>
-            <CardText>{course.Instructor}</CardText>
-            {timesRooms}
           </CardBody>
         </Card>
       </div>

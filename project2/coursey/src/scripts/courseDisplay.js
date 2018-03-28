@@ -74,18 +74,32 @@ class CourseDisplay extends React.Component {
         );
       } else {
         let courses = [];
+        let displayedCoursesTitles = [];
+        let displayedCourses = [];
         for (let i = 0; i < this.props.courseList.length; i++) {
           const course = this.props.courseList[i];
           const timesRooms = this.pairTimeRoom(course);
+          if (displayedCoursesTitles.indexOf(course.Title) === -1) {
+            console.log(displayedCourses.indexOf(course.Title));
+            console.log(course.Title);
+            displayedCoursesTitles.push(course.Title);
+            displayedCourses.push(
+              <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
+                <CourseCard course={course} timesRooms={timesRooms}/>
+              </Col>
+            );
+          }
+
           courses.push(
             <Col className="my-3" xs={12} sm={6} md={4} lg={3} key={course.Course + " " + i}>
               <CourseCard course={course} timesRooms={timesRooms}/>
             </Col>
           );
+
         }
         const cardData = (
           <Row>
-            {courses}
+            {displayedCourses}
           </Row>
         );
         return cardData;
