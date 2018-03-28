@@ -1,8 +1,8 @@
 
 project2/trash/src/component/BaseLookupMethod.js
 project2/trash/src/component/CourseCard.js
-project2/trash/src/component/CourseDetailModal.js
-project2/trash/src/component/CourseList.js
+project2/trash/src/component/CourseDetail.js
+project2/trash/src/component/CourseDisplay.js
 project2/trash/src/component/CourseLookup.js
 project2/trash/src/component/LookupByCourseTitle.js
 project2/trash/src/component/LookupByDepartment.js
@@ -13,5 +13,5 @@ project2/trash/src/data/Constants.js
 project2/trash/src/style/BaseLookupMethod.css
 project2/trash/src/style/CourseCard.css
 project2/trash/src/style/CourseLookup.css
-project2/trash/src/style/CourseList.css
+project2/trash/src/style/CourseDisplay.css
 project2/trash/src/style/NavigationMenu.css

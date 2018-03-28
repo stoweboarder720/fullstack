@@ -8,7 +8,7 @@ import "./index.css";
 import "./style/CourseLookup.css";
 import "./style/NavigationMenu.css";
 import "./style/BaseLookupMethod.css";
-import "./style/CourseList.css";
+import "./style/CourseDisplay.css";
 import "./style/CourseCard.css";
 
 ReactDOM.render(
