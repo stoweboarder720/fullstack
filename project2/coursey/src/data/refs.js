@@ -162,6 +162,48 @@ const Refs = {
           "CSCI 476"
         ]
       }
+    },
+    {
+      name: "Mechanical Engineering",
+      courses: {
+        FRESHMEN: [
+          "MATH 201", "PHYS 211", "ENGR 100",
+          "MATH 202", "MECH 220", "ENGR 214", "MECH 202"
+        ],
+        SOPHOMORES: [
+          "MECH 213", "MATH 211", "ENGR 240", "MECH 205",
+          "MATH 212", "MATH 227", "MECH 216", "MECH 353"
+        ],
+        JUNIORS: [
+          "MECH 252", "MECH 313", "MECH 355", "ECEG 205",
+          "MECH 302", "MECH 312", "MECH 392"
+        ],
+        SENIORS: [
+          "MECH 401", "MECH 403", "MECH 405",
+          "MECH 402"
+        ]
+      }
+    },
+    {
+      name: "Chemical Engineering",
+      courses: {
+        FRESHMEN: [
+          "MATH 201", "PHYS 211", "ENGR 100",
+          "MATH 202", "CHEM 205", "CHEG 200", "ENGR 211", "CHEG 101"
+        ],
+        SOPHOMORES: [
+          "CHEM 233", "ENGR 240", "MATH 211", "CHEG 302",
+          "CHEM 211", "CHEG 210", "ENGR 215", "ENGR 233", "CHEG 102"
+        ],
+        JUNIORS: [
+          "CHEM 212", "CHEM 343", "CHEG 300",
+          "CHEG 310", "CHEG 315", "CHEG 103"
+        ],
+        SENIORS: [
+          "CHEG 320", "CHEG 400",
+          "CHEG 330", "CHEG 410", "CHEG 104"
+        ]
+      }
     }
   ]
 }
