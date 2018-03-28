@@ -1,0 +1,7 @@
+.courseCard {
+  transform: scale(1.0);
+}
+
+.courseCard:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,14 @@
+-add transitions
+-change color scheme
+-handle warnings
+-add "ANY" options to the Requirement/Department drop downs in elective choice
+-add more majors for major select
+-less whitespace?
+-some cards are larger than others (ones with room number displayed)
+-revise promise statements
+-fix error that sometimes occurs due to tab swap during query 
+
+NOTE: removed event.preventDefault() call in searchMajor fcn in majorSelect.js
+NOTE: removed error checking from searchMajor() in majorSelect.js
+
+NOTE: removed render statement from courseSearch.js

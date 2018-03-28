@@ -1,6 +1,7 @@
 const Refs = {
   SERVER: "https://www.eg.bucknell.edu/~amm042/service/",
   DEPARTMENTS: [
+    "Any",
     "ACFM (Acct & Financial Management)",
     "AFST (Africana Studies)",
     "ANBE (Animal Behavior)",
@@ -70,6 +71,7 @@ const Refs = {
     "WMST (Women's and Gender Studies)"
   ],
   REQUIREMENTS: [
+    "Any",
     "ARHC (Arts and Humanities)",
     "AHLG (Arts and Humanities Learning Goals)",
     "CBL (Community Based Learning)",
@@ -93,13 +95,13 @@ const Refs = {
     "W1 (Writing Level 1)",
     "W2 (Writing Level 2)"
   ],
-  YEAR: [
+  YEARS: [
     "Freshman",
     "Sophomore",
     "Junior",
     "Senior"
   ],
-  MAJOR: [
+  MAJORS: [
     {
       name: "Electrical Engineering",
       courses: {

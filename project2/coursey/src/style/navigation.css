@@ -1,0 +1,28 @@
+.navbarItem {
+  color: white;
+}
+
+.navbarItem .active:hover {
+  color: #013474 !important;
+  background-color: white;
+}
+
+.navbarItem .active {  
+  color: #013474 !important;
+  background-color: white;
+}
+
+.navbarHeader {
+	background-color: #013474;
+}
+
+.navbarMenu {
+  background-color: #013474;
+}
+
+@media (max-width: 500px) {
+  .navbarItemLink {
+    border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+  }
+}
