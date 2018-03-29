@@ -7,7 +7,7 @@ class CourseSearch extends React.Component {
       .then((response) => response.json());
   }
 
-  crnFetch(courseID) {
+  crnDeptFetch(courseID) {
     const department = courseID.slice(0, 4).toUpperCase();
     const crn = courseID.substring(4).trim().toUpperCase();
     return fetch(Refs.SERVER + `q?Department=${department}&CrseNum=${crn}&Semester=Fall&Year=2018&limit=100`)

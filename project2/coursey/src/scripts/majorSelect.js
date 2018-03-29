@@ -62,7 +62,7 @@ class Major extends CourseSearch {
 
     if (year !== null) {
       for (let course of year) {
-        query.push(this.crnFetch(course));
+        query.push(this.crnDeptFetch(course));
       }
     }
     return query;
@@ -86,10 +86,10 @@ class Major extends CourseSearch {
     }
 
     Promise.all(query)
-      .then((results) => {
+      .then((queryResults) => {
         let requiredCourses = [];
-        for (let result of results) {
-          requiredCourses.push(...result.message);
+        for (let queryResult of queryResults) {
+          requiredCourses.push(...queryResult.message);
         }
         this.setState({ reqData: requiredCourses });
         this.props.changeReqs(this.state.reqData);
@@ -161,7 +161,7 @@ class Major extends CourseSearch {
         </div>
         <br/>
         <div className="text-center">
-          <Button onClick={this.fetchCourses}>Explore</Button>
+          <Button color="warning" onClick={this.fetchCourses}>Explore</Button>
         </div>
       </div>
     );
