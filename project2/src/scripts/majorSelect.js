@@ -131,13 +131,13 @@ class Major extends CourseSearch {
         <h2 className="text-center">First, find your required courses</h2>
         <br/>
         <div className="row">
-          <Form className="courseSearchForm" onSubmit={this.searchMajor} inline>
-            <Label className="col-6" for="yearChoice">Select your major: </Label>
-            <Input className="col-6" id="majorChoice" type="select" value={this.state.major} onChange={this.updatedMajor}>
+          <Form className="courseSearchForm text-center" onSubmit={this.searchMajor} inline>
+            <Label className="col-xs-12 col-sm-6 col-md-6 col-lg-6" for="majorChoice">Select your major: </Label>
+            <Input className="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="majorChoice" type="select" value={this.state.major} onChange={this.updatedMajor}>
               {majors}
             </Input>
-            <Label className="col-6" for="majorChoice">Select your year:</Label>
-            <Input className="col-6" id="yearChoice" type="select" value={this.state.year} onChange={this.updatedYear}>
+            <Label className="col-xs-12 col-sm-6 col-md-6 col-lg-6" for="yearChoice">Select your year:</Label>
+            <Input className="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="yearChoice" type="select" value={this.state.year} onChange={this.updatedYear}>
               {years}
             </Input>
           </Form>
@@ -148,13 +148,13 @@ class Major extends CourseSearch {
         <h2 className="text-center">{"Next, choose the department and/or the CCC requirement you'd like for your electives"}</h2>
         <br/>
         <div className="row">
-          <Form className="courseSearchForm" onSubmit={this.fetchCourses} inline>
-            <Label className="col-6" for="deptChoice">Select a department:</Label>
-            <Input className="col-6" id="deptChoice" type="select" value={this.state.department} onChange={this.updatedDepartment}>
+          <Form className="courseSearchForm text-center" onSubmit={this.fetchCourses} inline>
+            <Label className="col-xs-12 col-sm-6 col-md-6 col-lg-6" for="deptChoice">Select a department:</Label>
+            <Input className="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="deptChoice" type="select" value={this.state.department} onChange={this.updatedDepartment}>
               {departments}
             </Input>
-            <Label className="col-6" for="reqChoice">Select a CCC Requirement:</Label>
-            <Input className="col-6" id="reqChoice" type="select" value={this.state.requirement} onChange={this.updatedRequirement}>
+            <Label className="col-xs-12 col-sm-6 col-md-6 col-lg-6" for="reqChoice">Select a CCC Requirement:</Label>
+            <Input className="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="reqChoice" type="select" value={this.state.requirement} onChange={this.updatedRequirement}>
               {requirements}
             </Input>
           </Form>
