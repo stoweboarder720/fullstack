@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<!-- CURRENT PROBLEMS
+index.html: when webpage is shrunk incredibly small, the top content eventually stacks, looks ugly, another media statement should fix
+activity11b.html: the row/col project show does not keep buttons at equal height during page resizing
+-->
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Abel|Cabin|Noto+Sans|Oxygen|PT+Sans|Titillium+Web|Varela+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
+
+	<style>
+	* {
+		box-sizing: border-box; /* height/width includes content padding and borders */
+	}
+
+	body {
+		font-family: 'PT Sans', sans-serif;
+		font-family: 'Noto Sans', sans-serif;
+		font-family: 'Titillium Web', sans-serif;
+		font-family: 'Cabin', sans-serif;
+		font-family: 'Varela Round', sans-serif;
+		font-family: 'Abel', sans-serif;
+		font-family: 'Oxygen', sans-serif;
+	}
+	</style>
+
+	<title>Web Portfolio</title>
+</head>
+
+<body>
+	<section class="container">
+
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color: #013474;">
+          <a class="navbar-brand" href="#">Web Portfolio</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://stoweboarder720.github.io/fullstack/">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Coursework</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Project 1</a>
+                  <a class="dropdown-item" href="#">Project 2</a>
+                  <a class="dropdown-item" href="#">Project 3</a>
+                </div>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <button type="button" class="btn btn-warning my-2 my-sm-0" onclick="location.href = 'https://soundcloud.com/creezo';">BeatBank</button>
+            </form>
+          </div>
+        </nav>
+    </header>
+
+
+		<!-- section contains info about coursework such as activities and homework -->
+		<section class="row coursework" id="coursework">
+			<h2>Additional Coursework</h2>
+
+			<p class="col-12"> This section includes links to web pages that display the results from various in class activities. </p>
+
+			<section class="row col-12" id="activities">
+				<div class="col"><h4><a href="https://stoweboarder720.github.io/fullstack/fontfun.html">Font Fun</a></h4></div>
+				<div class="col"><h4><a href="https://stoweboarder720.github.io/fullstack/activity11/activity11a.html">Navbar</a></h4></div>
+				<div class="col"><h4><a href="https://stoweboarder720.github.io/fullstack/activity11/activity11b.html">Carousel/Cards</a></h4></div>
+				<div class="col"><h4><a href="https://stoweboarder720.github.io/fullstack/activity17/activity17.html">Name Pairings</a></h4></div>
+				<div class="col"><h4><a href="https://stoweboarder720.github.io/fullstack/activity19/activity19.html">Your Dog Bestie</a></h4></div>
+			</section>
+
+		</section>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
