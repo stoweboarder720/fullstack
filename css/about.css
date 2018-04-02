@@ -1,0 +1,11 @@
+body {
+  padding-top: 80px;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+#portrait {
+	width: 50%;
+	max-height: 160px;
+	max-width: 160px;
+}
